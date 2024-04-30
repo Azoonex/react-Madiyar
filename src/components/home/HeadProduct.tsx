@@ -1,5 +1,6 @@
 import { BiArrowFromRight } from "react-icons/bi";
 import classes from "../../styles/product.module.css";
+import { IarrowRight } from "../../assets/icons/icons";
 
 export default function HeadProduct() {
   return (
@@ -16,7 +17,7 @@ export default function HeadProduct() {
         </button>
       </div>
       <button className={classes.single}>مشاهده همه
-        <span><BiArrowFromRight className="i-xs" /></span>
+        <span><IarrowRight className="i-xs" /></span>
       </button>
     </nav>
   )

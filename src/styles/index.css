@@ -7,7 +7,7 @@
 
 :root{
     --bg-main:#eff2e6;
-    --btn-main-main: #a3c348;
+    --btn-main-color: #a3c348;
 
     --font-xs : 14px;
     --font-md : 20px;
@@ -29,6 +29,10 @@ button{
 
 a{
     text-decoration: none;
+}
+
+li{
+    display: inline-flex;
 }
 
 

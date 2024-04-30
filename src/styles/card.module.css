@@ -1,5 +1,51 @@
-.container{
-    width: 100px;
-    height: 100px;
-    background: #000;
+.container {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    margin-top: 30px;
+    gap: 5px;
+    padding: 8px;
+    border-radius: 6px;
+}
+
+.container > ul {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+.container > ul > li {
+    color: #fff;
+    background: var(--btn-main-color);
+    font-size: var(--font-sm);
+    padding: 1px 2px;
+    display: inline-flex;
+    border-radius: 7px;
+}
+
+.iconad {
+    font-size: 45px;
+    border-radius: 7px;
+    border: 1px solid var(--btn-main-color);
+    display: inline-flex;
+    color: var(--btn-main-color);
+}
+
+.iconad:hover {
+    background-color: var(--btn-main-color);
+    color: #fff;
+}
+
+.bodytitle {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bodytitle > button {
+    padding: 5px 10px;
+    border-radius: 4px;
+    background: #f5f5f5;
+    margin-bottom: 10px;
 }
