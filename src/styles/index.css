@@ -6,6 +6,8 @@ body {
     direction: rtl;
 }
 
+/* FONT -- START */
+
 @font-face {
     font-family: "peyda";
     font-style: normal;
@@ -20,6 +22,10 @@ body {
     font-family: "Casablanca";
     src: url("../assets/fonts/Casablanca.ttf") format("truetype");
 }
+
+/* FONT -- END */
+
+/* LOCALSTYLE -- START */
 
 * {
     font-family: peyda;
@@ -98,6 +104,10 @@ li {
 .i-md {
     font-size: 30px;
 }
+
+
+/* LOCALSTYLE -- END */
+
 
 
 /* CAROUCEL UI */
