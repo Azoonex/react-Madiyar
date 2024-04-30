@@ -17,13 +17,12 @@
     }
 
     .grop-btn_products > button {
-        font-size: 12px;
+        font-size: 10px;
     }
 
     .product_grid_system {
         grid-template-columns: repeat(2, 1fr);
-        grid-column-gap: 10px;
-        grid-row-gap: 15px;
+        gap: 4px;
     }
 
     .cardfooter_main {
