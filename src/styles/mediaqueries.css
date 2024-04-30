@@ -1,26 +1,30 @@
 @media only screen and (max-width: 768px) {
-    .nav_main_md{
+    .nav_main_md {
         flex-direction: row-reverse;
     }
     .ul_nav_link_md {
         display: none;
     }
-    
-    .content-menu-nav{
+
+    .content-menu-nav {
         position: relative;
     }
 
-    .mainSection_head{
+    .mainSection_head {
         flex-wrap: wrap;
         gap: 20px;
         justify-content: center;
     }
 
+    .product_grid_system {
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
 }
 
-
 @media only screen and (min-width: 769px) {
-    .content-menu-nav{
+    .content-menu-nav {
         display: none;
         flex-direction: row-reverse;
     }

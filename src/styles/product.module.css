@@ -45,11 +45,20 @@
     span {
         display: inline-flex;
     }
-
 }
 
-.single:hover{
-        background-color: var(--btn-main-color);
-        border-color: #fff;
-        color: #fff;
+.single:hover {
+    background-color: var(--btn-main-color);
+    border-color: #fff;
+    color: #fff;
+}
+
+/* CONTAINER PRODUCTS */
+.container_products {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    place-items: center;
+    gap: 10px;
+    padding-bottom: 10px;
 }
