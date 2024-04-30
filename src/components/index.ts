@@ -4,8 +4,7 @@ import Button from "./Button";
 import Card from "./Card";
 
 
-// MAIN COMPONETNS
-import header from "./home/header";
+
 
 
 // LAYOUT
@@ -13,6 +12,8 @@ import Navbar from "./layout/Navbar";
 
 
 
+// PAGE UI
+import Products from "./home/Products";
 
 
 
@@ -27,5 +28,4 @@ import Navbar from "./layout/Navbar";
 
 
 
-
-export { Navbar, Button, Card, header };
+export { Navbar, Button, Card, Products };
