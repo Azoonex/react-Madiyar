@@ -16,6 +16,10 @@
         gap: 20px;
     }
 
+    .grop-btn_products{
+        gap: 10px;
+    }
+
     .grop-btn_products > button {
         font-size: 10px;
     }
