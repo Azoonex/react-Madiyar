@@ -41,16 +41,17 @@
     }
 
     .nav-body_products {
-        display: block;
         grid-column-end: 3;
         grid-column-start: 1;
         grid-row-start: 3;
         grid-row-end: 4;
         grid-column:  span 2;
-        background: #000;
-        display: block;
+
         padding: 20px;
         width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
     }
 }
 

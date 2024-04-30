@@ -7,6 +7,8 @@ import {
     Iglasses,
     IPropanTank,
     Ibage,
+    Ihome,
+    Icatego,
 } from "../assets/icons/icons";
 
 const navLink = [
@@ -22,7 +24,6 @@ const titleProdocts = [
     { id: 3, text: "محبوب‌ترین‌ها" },
 ];
 
-
 const iconsheader = [
     { id: 1, icon: IHeart },
     { id: 2, icon: Ishop },
@@ -36,6 +37,11 @@ const cardFooter = [
     { id: 3, Icon: Ibage, label: "ورزش سلامتی" },
 ];
 
+const navLinkBodyProducts = [
+    { id: 1, Icon: Ihome, label: "خانه" },
+    { id: 2, Icon: Icatego, label: "دسته بندی ها" },
+    { id: 3, Icon: Ishop, label: "سبد خرید" },
+    { id: 4, Icon: Iperson, label: "پرفایل" },
+];
 
-
-export { navLink, iconsheader, cardFooter, titleProdocts };
+export { navLink, iconsheader, cardFooter, titleProdocts, navLinkBodyProducts };

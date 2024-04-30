@@ -43,3 +43,13 @@
     gap: 10px;
     padding-bottom: 10px;
 }
+
+.body_navlink{
+    display: grid;
+    place-items: center;
+    color: gray;
+}
+
+.body_navlink > h1{
+
+}

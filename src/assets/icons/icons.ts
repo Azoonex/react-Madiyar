@@ -6,6 +6,8 @@ import { IoPersonOutline as Iperson } from "react-icons/io5";
 // PRODUCTS --
 import { BiArrowFromRight as IarrowRight } from "react-icons/bi";
 import { IoIosAdd as Iadd } from "react-icons/io";
+import { HiOutlineHome as Ihome } from "react-icons/hi";
+import { BiCategoryAlt as Icatego } from "react-icons/bi";
 
 // CARDEFOOTER
 import { GiPerfumeBottle as Iperfume } from "react-icons/gi";
@@ -24,4 +26,6 @@ export {
     Iglasses,
     IPropanTank,
     Ibage,
+    Ihome,
+    Icatego,
 };

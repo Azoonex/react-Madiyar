@@ -1,7 +1,7 @@
 import HeadProduct from "./HeadProduct";
 import classes from "../../styles/product.module.css"
 import Card from "../Card";
-
+import { navLinkBodyProducts } from "../../constant";
 
 export default function Products() {
   const str = 'abasazoonexdevd'
@@ -12,14 +12,22 @@ export default function Products() {
       <HeadProduct />
       <div className={`${classes.container_products} product_grid_system`}>
         {
-          newProducts.map((i, index) => (
-            <div key={index}>
-              <Card key={index + 1} />
-              
+          newProducts.map((i) => (
+            <div>
+              <Card key={i + 1} />
             </div>
           ))
         }
-        <div className="nav-body_products">df</div>
+        <div className="nav-body_products">
+        {
+          navLinkBodyProducts.map((i,index) => (
+            <div className={classes.body_navlink}>
+              <h1><i.Icon style={{ color: index === 0 ? '#8fc204' : 'initial' }} /></h1>
+              <span>{i.label}</span>
+            </div>
+          ))
+        }
+        </div>
       </div>
     </section>
   )
