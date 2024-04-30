@@ -13,7 +13,6 @@
     .mainSection_head {
         flex-wrap: wrap;
         gap: 20px;
-        justify-content: center;
     }
 
     .grop-btn_products > button {
@@ -40,11 +39,28 @@
         margin-left: 0;
         margin: 20px;
     }
+
+    .nav-body_products {
+        display: block;
+        grid-column-end: 3;
+        grid-column-start: 1;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column:  span 2;
+        background: #000;
+        display: block;
+        padding: 20px;
+        width: 100%;
+    }
 }
 
 @media only screen and (min-width: 769px) {
     .content-menu-nav {
         display: none;
         flex-direction: row-reverse;
+    }
+
+    .nav-body_products {
+        display: none;
     }
 }
