@@ -6,7 +6,7 @@ import { titleProdocts } from "../../constant";
 export default function HeadProduct() {
   return (
     <nav className={`d-flex-space-bet  ${classes.mainsection_head} mainSection_head`}>
-      <div className={`${classes.gropbutton} grop-btn_products`}>
+      <div className={`${classes.gropbutton} grops`}>
         {
           titleProdocts.map(i => (
             <button className="product-btn_head">{i.text}</button>

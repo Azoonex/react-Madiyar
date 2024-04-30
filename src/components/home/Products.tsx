@@ -12,8 +12,8 @@ export default function Products() {
         <HeadProduct />
       <div className={`${classes.container_products} product_grid_system`}>
        {
-        newProducts.map((o,i) =>(
-          <Card key={i} />
+        newProducts.map((i) =>(
+          <Card key={i.length + 1}  />
         ))
        }
       </div>

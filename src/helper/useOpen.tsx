@@ -1,12 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import { useState } from 'react';
 
-export default function useOpen() {
+export default function useOpen(): [boolean, () => void] {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleMenu = () => {
-        setIsOpen(previous => {
-            return !previous
-        });
+        setIsOpen(prev => !prev);
     };
 
     return [isOpen, toggleMenu];

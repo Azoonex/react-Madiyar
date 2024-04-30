@@ -18,7 +18,6 @@ export default function Navbar() {
     <div className={`${classes.nav}`}>
       <div className={` d-flex-space-bet nav_main_md`}>
         <img src={logo} alt="img" />
-       
         <ul className={`d-flex-c gap-md ul_nav_link_md ${classes.btnEffect}`}>
           {mapingnavlink}
         </ul>
@@ -26,7 +25,7 @@ export default function Navbar() {
           {mapingicons}
         </ul>
         <div className="content-menu-nav d-flex-c gap-md">
-          <button  className="btn_menu" onClick={toggleMenu}>
+          <button className="btn_menu" onClick={toggleMenu}>
             <BiMenu className="i-md" />
           </button>
           <BiSearch className="i-md" />

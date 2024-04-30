@@ -2,7 +2,12 @@ import React, { useEffect, useState } from 'react';
 import { IoIosArrowBack } from "react-icons/io";
 import { IoIosArrowForward } from "react-icons/io";
 
-const Carousel = ({ images, interval = 3000 }) => {
+interface CarouselProps {
+    images: string[];
+    interval?: number;
+}
+
+const Carousel: React.FC<CarouselProps> = ({ images, interval = 3000 }) => {
     const [activeIndex, setActiveIndex] = useState(0);
     const nextSlide = () => {
         setActiveIndex((prevIndex) =>

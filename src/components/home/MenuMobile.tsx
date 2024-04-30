@@ -8,7 +8,7 @@ export default function MenuMobile() {
 
 
   return (
-    <ul  style={{width : "200px",alignContent:"flex-start",position: "absolute",right:-15,top: 50,display: "flex",flexDirection:"column",gap: 30,background:"#fce2",justifyContent: "flex-end",alignContent: "flex-end",padding:"10px"}}>
+    <ul  style={{width : "200px",position: "absolute",right:-15,top: 50,display: "flex",flexDirection:"column",gap: 30,background:"#fff",justifyContent: "flex-end",alignContent: "flex-end",padding:"10px"}}>
         {mapingnavlink}
         <li style={{display:"flex"}}>
         <Ishop className="i-xs" />

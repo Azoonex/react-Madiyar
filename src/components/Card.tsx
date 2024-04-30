@@ -5,9 +5,9 @@ import classes from "../styles/card.module.css"
 
 export default function Card() {
   const titleCard = [
-    {icon: Ishop},
-    {icon: Ishop},
-    {icon: Ishop},
+    {id:1,icon: Ishop},
+    {id:2,icon: Ishop},
+    {id:3,icon: Ishop},
   ];
   const iconsui = mapingUi(titleCard);
   return (
