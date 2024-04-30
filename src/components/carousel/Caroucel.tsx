@@ -25,7 +25,7 @@ const Carousel = ({ images, interval = 3000 }) => {
     return (
         <div className="carousel">
             <button onClick={prevSlide} className="carousel__btn carousel__btn--prev">
-                <IoIosArrowBack className='i-md'/>
+                <IoIosArrowBack className='i-sm'/>
             </button>
             <img
                 src={images[activeIndex]}
@@ -33,7 +33,7 @@ const Carousel = ({ images, interval = 3000 }) => {
                 className="carousel__img"
             />
             <button onClick={nextSlide} className="carousel__btn carousel__btn--next">
-                <IoIosArrowForward className='i-md' />
+                <IoIosArrowForward className='i-sm' />
             </button>
         </div>
     );

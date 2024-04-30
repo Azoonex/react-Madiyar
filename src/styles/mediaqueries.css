@@ -28,10 +28,17 @@
     .cardfooter_main :nth-child(1){
         order: 2;
     }
-}
     .cardfooter_main :nth-child(2){
         order: 1;
     }
+
+    .carousel{
+        margin-left: 0;
+        margin: 20px;
+    }
+}
+    
+    
 
 @media only screen and (min-width: 769px) {
     .content-menu-nav {

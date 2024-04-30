@@ -86,9 +86,6 @@ li {
     gap: 20px;
 }
 
-.bg {
-    background-color: red;
-}
 
 /* ICONS FONTS */
 
@@ -108,7 +105,7 @@ li {
 .carousel {
   position: relative;
   max-width: 100%;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .carousel__btn {
   position: absolute;
@@ -116,7 +113,7 @@ li {
   transform: translateY(-50%);
   background-color: #cccccc;
   color: #000;
-  font-size: 15px;
+  font-size: 10px;
   border: none;
   padding: 9px;
   cursor: pointer;
