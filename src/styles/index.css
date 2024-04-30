@@ -1,25 +1,45 @@
-*,body {
+*,
+body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     direction: rtl;
 }
 
-:root{
-    --bg-main:#eff2e6;
-    --btn-main-color: #a3c348;
-
-    --font-xs : 14px;
-    --font-md : 20px;
-    --font-md : 24px;
+@font-face {
+    font-family: "peyda";
+    font-style: normal;
+    font-weight: 700;
+    src: url("../assets/fonts/PEYDA/MAIN/woff2/PeydaWebFaNum-SemiBold.woff2")
+            format("woff2"),
+        url("../assets/fonts/PEYDA/MAIN/woff/PeydaWebFaNum-SemiBold.woff")
+            format("woff");
 }
 
-ul{
+@font-face {
+    font-family: "Casablanca";
+    src: url("../assets/fonts/Casablanca.ttf") format("truetype");
+}
+
+* {
+    font-family: peyda;
+}
+
+:root {
+    --bg-main: #eff2e6;
+    --btn-main-color: #a3c348;
+
+    --font-xs: 14px;
+    --font-md: 20px;
+    --font-md: 24px;
+}
+
+ul {
     list-style: none;
     list-style-type: none;
 }
 
-button{
+button {
     background: none;
     border: none;
     text-align: center;
@@ -27,14 +47,13 @@ button{
     animation-duration: 1s;
 }
 
-a{
+a {
     text-decoration: none;
 }
 
-li{
+li {
     display: inline-flex;
 }
-
 
 .d-flex {
     display: flex;
@@ -67,19 +86,18 @@ li{
     gap: 20px;
 }
 
-.bg{
+.bg {
     background-color: red;
 }
 
-
 /* ICONS FONTS */
 
-.i-xs{
+.i-xs {
     font-size: 20px;
 }
-.i-sm{
+.i-sm {
     font-size: 25px;
 }
-.i-md{
+.i-md {
     font-size: 30px;
 }

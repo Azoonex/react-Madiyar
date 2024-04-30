@@ -7,7 +7,7 @@ export default function Products() {
   return (
     <section className={classes.mainsection}>
         <HeadProduct />
-        
+      <Card />
     </section>
   )
 }
