@@ -11,7 +11,7 @@ export default function Card() {
   ];
   const iconsui = mapingUi(titleCard);
   return (
-    <div className={classes.container}>
+    <div className={`${classes.container} card_cotainer`}>
       <ul>
         {iconsui}
       </ul>

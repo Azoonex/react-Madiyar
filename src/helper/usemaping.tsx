@@ -1,7 +1,8 @@
+import { NavLinksType } from "../types/type";
 
-export default function mapingUi(data) {
-    return data.map(i => (
-       <li>
+export default function mapingUi(data:NavLinksType[]) {
+    return data.map((i:NavLinksType) => (
+       <li style={{cursor:"pointer"}}>
             {i?.label ? i.label : <i.icon />} 
        </li>
     ))
