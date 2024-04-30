@@ -141,3 +141,50 @@ li {
 .carousel__img:hover {
   cursor: pointer;
 }
+
+
+/*  BUTTONS UI -- START */
+
+.btn-full__bg{
+    margin-top: 70px;
+    padding: 10px ;
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid var(--btn-main-color);
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    background-color: #80ad01;
+    color: #fff;
+    justify-content: center;
+
+    span {
+        display: inline-flex;
+    }
+}
+
+.btn-full__bg:hover{
+    background-color: var(--btn-main-color);
+    color: #fff;
+}
+
+.btn-outline {
+    padding: 10px 20px;
+    border-radius: 9px;
+    border: 1px solid var(--btn-main-color);
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+    span {
+        display: inline-flex;
+    }
+}
+
+.btn-outline:hover {
+    background-color: var(--btn-main-color);
+    border-color: #fff;
+    color: #fff;
+}
+
+/* BUTTONS UI -- END*/

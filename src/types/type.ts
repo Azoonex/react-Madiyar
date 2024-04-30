@@ -5,3 +5,9 @@ export interface NavLinksType {
     label: string;
     icon: IconType;
 }
+
+export  interface ButtonTypes {
+    style?:string;
+    text:string;
+    Icon?:IconType;
+}

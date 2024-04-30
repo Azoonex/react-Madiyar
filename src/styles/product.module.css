@@ -34,24 +34,7 @@
     padding: 5px;
 }
 
-.single {
-    padding: 10px 20px;
-    border-radius: 9px;
-    border: 1px solid var(--btn-main-color);
-    display: flex;
-    align-items: center;
-    gap: 1px;
 
-    span {
-        display: inline-flex;
-    }
-}
-
-.single:hover {
-    background-color: var(--btn-main-color);
-    border-color: #fff;
-    color: #fff;
-}
 
 /* CONTAINER PRODUCTS */
 .container_products {

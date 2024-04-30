@@ -1,5 +1,6 @@
 import classes from "../../styles/product.module.css";
 import { IarrowRight } from "../../assets/icons/icons";
+import Button from "../Button";
 
 export default function HeadProduct() {
   return (
@@ -15,9 +16,7 @@ export default function HeadProduct() {
           خرید
         </button>
       </div>
-      <button className={classes.single}>مشاهده همه
-        <span><IarrowRight className="i-xs" /></span>
-      </button>
+      <Button text="مشاهد همه" style="btn-outline" Icon={IarrowRight} />
     </nav>
   )
 }
