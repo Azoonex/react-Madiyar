@@ -1,6 +1,9 @@
+import classes from "../styles/card.module.css"
 
 export default function Card() {
   return (
-    <div>Card</div>
+    <div className={classes.container}>
+      
+    </div>
   )
 }

@@ -1,9 +1,6 @@
 // UTILS
-
 import Button from "./Button";
 import Card from "./Card";
-
-
 
 
 
@@ -14,6 +11,7 @@ import Navbar from "./layout/Navbar";
 
 // PAGE UI
 import Products from "./home/Products";
+import HeadProduct from "./home/HeadProduct";
 
 
 
@@ -27,5 +25,4 @@ import Products from "./home/Products";
 
 
 
-
-export { Navbar, Button, Card, Products };
+export { Navbar, Button, Card, Products, HeadProduct };

@@ -1,0 +1,54 @@
+.mainsection {
+    padding: 10px 20px;
+    width: 95%;
+    margin-inline: auto;
+    background-color: var(--bg-main);
+    margin-top: 20px;
+}
+
+.gropbutton {
+    padding: 4px 10px;
+    border: 1px solid gray;
+    border-radius: 10px;
+    display: flex;
+    gap: 30px;
+}
+
+.gropbutton > button:nth-child(1) {
+    background-color: #d9ddcb;
+}
+
+.gropbutton > button {
+    font-size: var(--font-sm);
+    padding: 7px 20px;
+    color: #a5a7a1;
+    font-weight: bold;
+    border-radius: 10px;
+}
+.gropbutton > button:hover {
+    background: #d9ddcb;
+}
+
+.mainsection_head {
+    padding: 5px;
+}
+
+.single {
+    padding: 10px 20px;
+    border-radius: 9px;
+    border: 1px solid var(--btn-main-main);
+    display: flex;
+    align-items: center;
+    gap: 1px;
+
+    span {
+        display: inline-flex;
+    }
+
+}
+
+.single:hover{
+        background-color: var(--btn-main-main);
+        border-color: #fff;
+        color: #fff;
+}
