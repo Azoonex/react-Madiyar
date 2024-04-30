@@ -11,3 +11,4 @@ export  interface ButtonTypes {
     text:string;
     Icon?:IconType;
 }
+

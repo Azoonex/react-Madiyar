@@ -1,3 +1,4 @@
+//ICONS
 import {
     IHeart,
     Ishop,
@@ -8,14 +9,19 @@ import {
     Ibage,
 } from "../assets/icons/icons";
 
-//ICONS
-
 const navLink = [
     { id: 1, label: "خانه" },
     { id: 2, label: "بلاگ" },
     { id: 3, label: "داستان ها" },
     { id: 4, label: "تماس با ما" },
 ];
+
+const titleProdocts = [
+    { id: 1, text: "پرفروش‌ترین‌ها" },
+    { id: 2, text: "جدیدترین" },
+    { id: 3, text: "محبوب‌ترین‌ها" },
+];
+
 
 const iconsheader = [
     { id: 1, icon: IHeart },
@@ -30,4 +36,6 @@ const cardFooter = [
     { id: 3, Icon: Ibage, label: "ورزش سلامتی" },
 ];
 
-export { navLink, iconsheader, cardFooter };
+
+
+export { navLink, iconsheader, cardFooter, titleProdocts };
