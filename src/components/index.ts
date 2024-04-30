@@ -12,6 +12,7 @@ import Navbar from "./layout/Navbar";
 // PAGE UI
 import Products from "./home/Products";
 import HeadProduct from "./home/HeadProduct";
+import CardFooter from "./home/CardFooter";
 
 
 
@@ -24,5 +25,4 @@ import HeadProduct from "./home/HeadProduct";
 
 
 
-
-export { Navbar, Button, Card, Products, HeadProduct };
+export { Navbar, Button, Card, Products, HeadProduct, CardFooter };

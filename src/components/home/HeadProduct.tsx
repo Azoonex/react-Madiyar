@@ -1,4 +1,3 @@
-import { BiArrowFromRight } from "react-icons/bi";
 import classes from "../../styles/product.module.css";
 import { IarrowRight } from "../../assets/icons/icons";
 

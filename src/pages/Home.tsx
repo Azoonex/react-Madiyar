@@ -1,4 +1,4 @@
-import { Navbar,Products } from "../components";
+import { CardFooter, Navbar,Products } from "../components";
 
 
 export default function Home() {
@@ -6,6 +6,7 @@ export default function Home() {
     <header>
       <Navbar />
       <Products />
+      <CardFooter />
     </header>
   )
 }

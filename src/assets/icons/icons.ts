@@ -7,4 +7,21 @@ import { IoPersonOutline as Iperson } from "react-icons/io5";
 import { BiArrowFromRight as IarrowRight } from "react-icons/bi";
 import { IoIosAdd as Iadd } from "react-icons/io";
 
-export { Ishop, IHeart, Iperson, IarrowRight, Iadd };
+// CARDEFOOTER
+import { GiPerfumeBottle as Iperfume } from "react-icons/gi";
+import { LuGlasses as Iglasses } from "react-icons/lu";
+import { MdOutlinePropaneTank as IPropanTank } from "react-icons/md";
+import { LuShoppingBag as Ibage } from "react-icons/lu";
+
+
+export {
+    Ishop,
+    IHeart,
+    Iperson,
+    IarrowRight,
+    Iadd,
+    Iperfume,
+    Iglasses,
+    IPropanTank,
+    Ibage,
+};

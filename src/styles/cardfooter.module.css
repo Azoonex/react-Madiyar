@@ -1,0 +1,76 @@
+.container {
+    width: 95%;
+    margin-inline: auto;
+    padding: 7px;
+    margin-top: 50px;
+    background-color: #626754;
+    height: 90vh;
+    border-radius: 7px;
+    margin-bottom: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    place-items: center;
+}
+
+.container > .content_caption {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+.cardfooter_content {
+    background: red;
+    width: 270px;
+    height: 270px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.btncard {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #e9eee0;
+    gap: 10px;
+    border-radius: 7px;
+    cursor: pointer;
+    transition-duration: .35s;
+}
+
+.btncard:hover{
+    border: 2px solid var(--btn-main-color);
+    box-shadow: -6px 10px 28px 0px var(--btn-main-color);
+}
+
+.btncard:hover > li {
+    color: var(--btn-main-color);
+}
+
+.single {
+    margin-top: 70px;
+    padding: 10px ;
+    width: 100%;
+    border-radius: 9px;
+    border: 1px solid var(--btn-main-color);
+    display: flex;
+    align-items: center;
+    gap: 1px;
+    background-color: #80ad01;
+    color: #fff;
+    justify-content: center;
+
+    span {
+        display: inline-flex;
+    }
+}
+
+.single:hover {
+    background-color: var(--btn-main-color);
+    color: #fff;
+}

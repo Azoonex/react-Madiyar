@@ -21,7 +21,17 @@
         grid-column-gap: 10px;
         grid-row-gap: 15px;
     }
+
+    .cardfooter_main{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .cardfooter_main :nth-child(1){
+        order: 2;
+    }
 }
+    .cardfooter_main :nth-child(2){
+        order: 1;
+    }
 
 @media only screen and (min-width: 769px) {
     .content-menu-nav {
