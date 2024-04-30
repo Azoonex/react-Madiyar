@@ -48,8 +48,10 @@
     display: grid;
     place-items: center;
     color: gray;
+    cursor: pointer;
 }
 
-.body_navlink > h1{
-
+.body_navlink:hover{
+    color: var(--btn-main-color);
 }
+

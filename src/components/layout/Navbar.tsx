@@ -11,8 +11,6 @@ export default function Navbar() {
   const mapingicons = mapingUi(iconsheader)
   const [isOpen, toggleMenu] = useOpen();
 
-  console.log(isOpen)
-
 
   return (
     <div className={`${classes.nav}`}>

@@ -1,3 +1,4 @@
+/* XS UI  */
 @media only screen and (max-width: 768px) {
     .nav_main_md {
         flex-direction: row-reverse;
@@ -45,7 +46,7 @@
         grid-column-start: 1;
         grid-row-start: 3;
         grid-row-end: 4;
-        grid-column:  span 2;
+        grid-column: span 2;
 
         padding: 20px;
         width: 100%;
@@ -54,6 +55,18 @@
         justify-content: space-between;
     }
 }
+
+/* TABLET UI */
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+        .product_grid_system {
+        grid-template-columns: repeat(4, 1fr);
+        grid-column-gap: 10px;
+        grid-row-gap: 15px;
+    }
+}
+
+/* DISKTIP UI */
 
 @media only screen and (min-width: 769px) {
     .content-menu-nav {
@@ -65,3 +78,5 @@
         display: none;
     }
 }
+
+
