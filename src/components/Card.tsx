@@ -15,7 +15,7 @@ export default function Card() {
       <ul>
         {iconsui}
       </ul>
-      <img src={imageproduct} alt="iamge" width={150} style={{display:"block",marginInline :"auto",objectFit:"cover"}} />
+      <img src={imageproduct} alt="iamge" width={100} style={{display:"block",marginInline :"auto",objectFit:"cover"}} />
       <h4>عنوان محصول عنوان محصول </h4>
       <h5>عنوان محصول</h5>
 

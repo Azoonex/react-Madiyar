@@ -41,7 +41,7 @@
     grid-template-columns: repeat(5, 1fr);
     place-items: center;
     gap: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 3px;
 }
 
 .body_navlink{

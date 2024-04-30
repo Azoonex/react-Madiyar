@@ -22,6 +22,7 @@
 
     .product_grid_system {
         grid-template-columns: repeat(2, 1fr);
+        padding-inline: 6px;
         gap: 4px;
     }
 
