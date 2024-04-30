@@ -1,0 +1,28 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+.d-flex {
+    display: flex;
+    align-items: center;
+}
+
+.d-flex-c {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.d-flex-space-bet {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.d-flex-space-around {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
