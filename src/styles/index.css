@@ -101,3 +101,46 @@ li {
 .i-md {
     font-size: 30px;
 }
+
+
+/* CAROUCEL UI */
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  margin-left: 20px;
+}
+.carousel__btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: #cccccc;
+  color: #000;
+  font-size: 15px;
+  border: none;
+  padding: 9px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s;
+  border-radius: 10px;
+}
+.carousel__btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+}
+.carousel__btn--prev {
+  left: -15px;
+}
+.carousel__btn--next {
+  right: -15px;
+}
+.carousel__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+}
+.carousel__img:hover {
+  cursor: pointer;
+}

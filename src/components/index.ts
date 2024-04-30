@@ -13,6 +13,7 @@ import Navbar from "./layout/Navbar";
 import Products from "./home/Products";
 import HeadProduct from "./home/HeadProduct";
 import CardFooter from "./home/CardFooter";
+import Carousel from "./carousel/Caroucel";
 
 
 
@@ -24,5 +25,4 @@ import CardFooter from "./home/CardFooter";
 
 
 
-
-export { Navbar, Button, Card, Products, HeadProduct, CardFooter };
+export { Navbar, Button, Card, Products, HeadProduct, CardFooter, Carousel };

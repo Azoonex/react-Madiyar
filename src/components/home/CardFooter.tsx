@@ -1,10 +1,16 @@
-import { image1 } from "../../assets"
+import { image1, image2 } from "../../assets"
 import { IarrowRight } from "../../assets/icons/icons"
 import { cardFooter } from "../../constant"
 import classes from "../../styles/cardfooter.module.css"
+import Carousel from "../carousel/Caroucel"
 import BtnCard from "./BtnCard"
 
 export default function CardFooter() {
+  const images = [
+    image1,
+    image2,
+    image1
+  ];
   return (
     <section className={`${classes.container} cardfooter_main`}>
         <div className="content_caption">
@@ -19,7 +25,9 @@ export default function CardFooter() {
                   <span><IarrowRight className="i-xs" /></span>
               </button>
         </div>
-        <img src={image1} alt="img" width={100} />
+      <div className="">
+        <Carousel images={images} />
+      </div>
     </section>
   )
 }
