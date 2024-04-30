@@ -19,7 +19,7 @@ export default function Navbar() {
       <div className={` d-flex-space-bet nav_main_md`}>
         <img src={logo} alt="img" />
        
-        <ul className={`d-flex-c gap-md ul_nav_link_md`}>
+        <ul className={`d-flex-c gap-md ul_nav_link_md ${classes.btnEffect}`}>
           {mapingnavlink}
         </ul>
         <ul className={`d-flex-c gap-md ul_nav_link_md`}>

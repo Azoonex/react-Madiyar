@@ -45,6 +45,7 @@
 .btncard:hover{
     border: 2px solid var(--btn-main-color);
     box-shadow: -6px 10px 28px 0px var(--btn-main-color);
+    color: var(--btn-main-color);
 }
 
     
