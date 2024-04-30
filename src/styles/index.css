@@ -169,7 +169,7 @@ li {
 }
 
 .btn-outline {
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 9px;
     border: 1px solid var(--btn-main-color);
     display: flex;

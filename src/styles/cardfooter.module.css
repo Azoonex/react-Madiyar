@@ -4,7 +4,6 @@
     padding: 7px;
     margin-top: 50px;
     background-color: #626754;
-    height: 90vh;
     border-radius: 7px;
     margin-bottom: 10px;
     display: grid;
@@ -12,6 +11,7 @@
     grid-column-gap: 10px;
     grid-row-gap: 15px;
     place-items: center;
+    padding-block: 30px;
 }
 
 .container > .content_caption {

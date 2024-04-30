@@ -16,30 +16,31 @@
         justify-content: center;
     }
 
+    .grop-btn_products > button {
+        font-size: 12px;
+    }
+
     .product_grid_system {
         grid-template-columns: repeat(2, 1fr);
         grid-column-gap: 10px;
         grid-row-gap: 15px;
     }
 
-    .cardfooter_main{
+    .cardfooter_main {
         grid-template-columns: repeat(1, 1fr);
     }
-    .cardfooter_main :nth-child(1){
+    .cardfooter_main :nth-child(1) {
         order: 2;
     }
-    .cardfooter_main :nth-child(2){
+    .cardfooter_main :nth-child(2) {
         order: 1;
     }
 
-    .carousel{
+    .carousel {
         margin-left: 0;
         margin: 20px;
     }
-
 }
-    
-    
 
 @media only screen and (min-width: 769px) {
     .content-menu-nav {
