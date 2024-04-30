@@ -1,7 +1,10 @@
+import { Navbar } from "../components";
 
 
 export default function Home() {
   return (
-    <div>Home</div>
+    <header>
+      <Navbar />
+    </header>
   )
 }

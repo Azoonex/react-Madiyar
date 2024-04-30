@@ -1,9 +1,11 @@
+import { Home } from "./pages"
+
+
 
 function App() {
-  
   return (
     <>
-      create items
+      <Home />
     </>
   )
 }
