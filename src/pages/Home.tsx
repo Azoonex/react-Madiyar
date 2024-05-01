@@ -1,12 +1,16 @@
-import { CardFooter, Navbar,Products } from "../components";
+import { CardFooter, Navbar, Products } from "../components";
 
 
 export default function Home() {
   return (
-    <header>
-      <Navbar />
+    <main>
+      <nav>
+        <Navbar />
+      </nav>
       <Products />
-      <CardFooter />
-    </header>
+      <footer>
+        <CardFooter />
+      </footer>
+    </main>
   )
 }
