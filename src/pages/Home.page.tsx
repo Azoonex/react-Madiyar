@@ -1,7 +1,7 @@
 import { CardFooter, Navbar, Products } from "../components";
 
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main>
       <nav>
