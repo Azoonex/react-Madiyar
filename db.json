@@ -1,0 +1,19 @@
+{
+    "superhero": [
+        {
+            "id": 1,
+            "name" : "bateman",
+            "property" : "mmad gader"
+        },
+        {
+            "id": 2,
+            "name" : "superman",
+            "property" : "abas gader"
+        },
+        {
+            "id": 1,
+            "name" : "hero quen",
+            "property" : "zahra gader"
+        },
+    ]
+}
