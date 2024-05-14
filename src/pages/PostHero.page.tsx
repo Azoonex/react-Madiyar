@@ -1,7 +1,7 @@
 import axios from "axios"
 import { useEffect, useState } from "react"
 
-type hero = {
+export type hero = {
   id: number,
   name : string
 }
