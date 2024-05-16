@@ -1,14 +1,10 @@
 import {
-    HomePage, PostHeroPage, ProductHeroPage
+    HomePage
 } from "./pages"
 
 
 let routes = [
     { path: "/", element: <HomePage /> },
-    { path: '/post', element: <PostHeroPage /> },
-    {
-        path: '/product', element: <ProductHeroPage />
-    }
 ]
 
 export default routes
