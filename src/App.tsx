@@ -1,6 +1,8 @@
 import { useRoutes } from "react-router-dom";
 import routes from "./router";
 import Student from "./test-ts/Student";
+import Heading from "./test-ts/Heading";
+import Footer from "./test-ts/Footer";
 
 
 const allStudent = [
@@ -21,7 +23,12 @@ function App() {
   return (
     <>
       {router}
+      {/* react-ts */}
       <Student allStudent={allStudent} status={creating} />
+      <Heading>
+        createitems
+      </Heading>
+      <Footer style="" />
     </>
   )
 }
