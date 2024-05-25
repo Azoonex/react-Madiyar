@@ -2,7 +2,7 @@ import { useRoutes } from "react-router-dom";
 import routes from "./router";
 import Student from "./test-ts/Student";
 import Heading from "./test-ts/Heading";
-import Footer from "./test-ts/Footer";
+import Button from "./test-ts/Button";
 
 
 const allStudent = [
@@ -28,7 +28,9 @@ function App() {
       <Heading>
         createitems
       </Heading>
-      <Footer style="" />
+      <Button handleCLikc={(event,id) => {
+        console.log("click my",event,id)
+      }} />
     </>
   )
 }
