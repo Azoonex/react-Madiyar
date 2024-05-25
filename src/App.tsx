@@ -3,6 +3,7 @@ import routes from "./router";
 import Student from "./test-ts/Student";
 import Heading from "./test-ts/Heading";
 import Button from "./test-ts/Button";
+import Input from "./test-ts/Input";
 
 
 const allStudent = [
@@ -31,6 +32,9 @@ function App() {
       <Button handleCLikc={(event,id) => {
         console.log("click my",event,id)
       }} />
+
+      <Input handchange={(evnet)=> console.log(evnet)} value="" />
+
     </>
   )
 }
