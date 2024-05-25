@@ -4,6 +4,7 @@ import Student from "./test-ts/Student";
 import Heading from "./test-ts/Heading";
 import Button from "./test-ts/Button";
 import Input from "./test-ts/Input";
+import Accordone from "./test-ts/accordone";
 
 
 const allStudent = [
@@ -29,11 +30,13 @@ function App() {
       <Heading>
         createitems
       </Heading>
-      <Button handleCLikc={(event,id) => {
-        console.log("click my",event,id)
+      <Button handleCLikc={(event, id) => {
+        console.log("click my", event, id)
       }} />
 
-      <Input handchange={(evnet)=> console.log(evnet)} value="" />
+      <Input handchange={(evnet) => console.log(evnet)} value="" />
+
+      <Accordone styles={"fontSize: '20px',background:'red' "} />
 
     </>
   )
