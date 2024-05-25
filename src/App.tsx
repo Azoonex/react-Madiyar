@@ -36,7 +36,7 @@ function App() {
 
       <Input handchange={(evnet) => console.log(evnet)} value="" />
 
-      <Accordone styles={"fontSize: '20px',background:'red' "} />
+      <Accordone styles={{border:"10px",fontSize:"30px"}} />
 
     </>
   )
