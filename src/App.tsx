@@ -4,7 +4,6 @@ import Student from "./test-ts/Student";
 import Heading from "./test-ts/Heading";
 import Button from "./test-ts/Button";
 import Input from "./test-ts/Input";
-import Accordone from "./test-ts/accordone";
 
 
 const allStudent = [
