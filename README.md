@@ -30,4 +30,4 @@ export default {
 - Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list // adding react-query
 
 
-# adding for labtop test
+# adding for labtop test // 
