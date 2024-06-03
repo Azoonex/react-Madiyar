@@ -8,15 +8,17 @@ type DataFormValue = {
   channel: string;
 };
 
+
 export default function Login() {
 
 
+  const form = useForm < DataFormValue > ()
+  const { register, handleSubmit, control } = form;
 
-  const { register, handleSubmit, control } = useForm < DataFormValue > ();
-
-  const onSubmit: SubmitHandler<DataFormValue> = (data) => {
+  const onSubmit = (data: DataFormValue) => {
     console.log(data);
   };
+  
   return (
     <div>
       <h1>YouTube Form</h1>
@@ -32,6 +34,7 @@ export default function Login() {
 
         <button>Submit</button>
       </form>
+
       <DevTool control={control} />
     </div >
   )
