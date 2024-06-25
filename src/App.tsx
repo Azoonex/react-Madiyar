@@ -1,10 +1,12 @@
-import PostData from "./test-ts/Counter"
+import { useRoutes } from "react-router-dom"
+import routes from "./router"
 
 
 function App() {
+  const route = useRoutes(routes)
   return (
     <>
-      <PostData />
+    {route}
     </>
   )
 }
