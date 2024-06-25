@@ -45,6 +45,15 @@ ul {
     list-style-type: none;
 }
 
+/* style error start */
+
+p{
+ color: red;
+ font-size: var(--font-md);
+}
+
+/* style erro end */
+
 button {
     background: none;
     border: none;
