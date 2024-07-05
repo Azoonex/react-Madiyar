@@ -1,6 +1,6 @@
 import { DevTool } from "@hookform/devtools";
 import { FormValues } from "./types_form";
-import { useForm } from "react-hook-form";
+import { useForm, FieldErrors } from "react-hook-form";
 import { useEffect } from "react";
 
 
@@ -27,6 +27,10 @@ export default function Login() {
     })
   }
 
+  function onError(errors: FieldErrors<FormValues>){
+    console.log("form erros",errors);
+  }
+
   // useEffect(()=>{
   //   const subscribon = watch((value)=>{
   //     console.log(value);
@@ -40,7 +44,7 @@ export default function Login() {
     <div>
       <h1>YouTube Form</h1>
       <h2>watched value : {watchUserName}</h2>
-      <form onSubmit={handleSubmit(onSbmite)}>
+      <form onSubmit={handleSubmit(onSbmite,onError)}>
         <label htmlFor="username">Username</label>
         <input type="text" id="username"  {...register("username", {
           required: 'UserName is required !',
