@@ -7,7 +7,7 @@ import { useEffect } from "react";
 export default function Login() {
   const form = useForm < FormValues > ()
   const { control, register, handleSubmit, formState, watch, getValues, setValue } = form
-  const { errors } = formState
+  const { errors,touchedFields,dirtyFields } = formState
 
   const onSbmite = (data: FormValues) => {
     console.log('Form submit', data);
@@ -64,6 +64,7 @@ export default function Login() {
 
         <label htmlFor="channel">Channel</label>
         <input type="text" id="channel" {...register("channel", {
+          disable: watch("username") === "",
           required: {
             value: true,
             message: "This is not valid channel"
