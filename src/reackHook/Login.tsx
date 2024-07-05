@@ -4,7 +4,8 @@ import { DevTool } from "@hookform/devtools";
 type FormValues = {
   username: string,
   email : string,
-  channel : string
+  channel : string,
+  age: number
 }
 
 
@@ -52,6 +53,17 @@ export default function Login() {
           }
         })} />
         <p>{errors.channel?.message}</p>
+
+        <label htmlFor="age">Age</label>
+        <input type="number" id="age" {...register("age", {
+          valueAsNumber:true,
+          required: {
+            value: true,
+            message: "This is not valid Age"
+          }
+        })} />
+        <p>{errors.age?.message}</p>
+
 
         <button style={{marginTop: "10px"}}>Submit</button>
         <DevTool control={control} />
