@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 export default function Login() {
   const form = useForm < FormValues > ()
-  const { control, register, handleSubmit, formState, watch,getValues } = form
+  const { control, register, handleSubmit, formState, watch, getValues, setValue } = form
   const { errors } = formState
 
   const onSbmite = (data: FormValues) => {
@@ -17,6 +17,14 @@ export default function Login() {
 
   function handleGetValues (){
     console.log("get values",getValues(["username","channel"]));
+  }
+
+  function handlesetValue (){
+    setValue("username","",{
+      shouldValidate:true,
+      shouldDrity: true,
+      shouldTouch : true
+    })
   }
 
   // useEffect(()=>{
@@ -76,6 +84,7 @@ export default function Login() {
 
         <button style={{ marginBlock: "10px" }}>Submit</button>
         <button onClick={handleGetValues} type="button">getValues</button>
+        <button onClick={handlesetValue} type="button">setValue</button>
         <DevTool control={control} />
       </form>
     </div>
