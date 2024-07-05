@@ -6,7 +6,7 @@ import { useEffect } from "react";
 
 export default function Login() {
   const form = useForm < FormValues > ()
-  const { control, register, handleSubmit, formState, watch } = form
+  const { control, register, handleSubmit, formState, watch,getValues } = form
   const { errors } = formState
 
   const onSbmite = (data: FormValues) => {
@@ -15,14 +15,18 @@ export default function Login() {
 
   const watchUserName = watch(["username","email"])
 
-  useEffect(()=>{
-    const subscribon = watch((value)=>{
-      console.log(value);
-    })
+  function handleGetValues (){
+    console.log("get values",getValues(["username","channel"]));
+  }
 
-    return ()=>{subscribon.unsubscribe()}
+  // useEffect(()=>{
+  //   const subscribon = watch((value)=>{
+  //     console.log(value);
+  //   })
 
-  },[watch])
+  //   return ()=>{subscribon.unsubscribe()}
+
+  // },[watch])
 
   return (
     <div>
@@ -70,7 +74,8 @@ export default function Login() {
         <p>{errors.age?.message}</p>
 
 
-        <button style={{ marginTop: "10px" }}>Submit</button>
+        <button style={{ marginBlock: "10px" }}>Submit</button>
+        <button onClick={handleGetValues} type="button">getValues</button>
         <DevTool control={control} />
       </form>
     </div>
