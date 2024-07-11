@@ -5,7 +5,7 @@ import { useEffect } from "react";
 
 export default function Login() {
   const form = useForm < FormValues > ();
-  const { control, register, handleSubmit, formState, watch, getValues, setValue, isValid, isDirty, isSubmitted, isSubmitting, isSubmitSuccessful, submitCount } = form;
+  const { rest,control, register, handleSubmit, formState, watch, getValues, setValue, isValid, isDirty, isSubmitted, isSubmitting, isSubmitSuccessful, submitCount } = form;
 
   console.log(isSubmitted, isSubmitting, isSubmitSuccessful, submitCount);
 
@@ -35,13 +35,11 @@ export default function Login() {
   }
 
   // useEffect(() => {
-  //   const subscribon = watch((value) => {
-  //     console.log(value);
-  //   })
+  //     is(isSubmitSuccessful){
+  //       rest()
+  //     }
 
-  //   return () => { subscribon.unsubscribe() }
-
-  // }, [watch])
+  // }, [rest,isSubmitSuccessful])
 
   return (
     <div>
@@ -87,6 +85,10 @@ export default function Login() {
           }
         })} />
         <p>{errors.age?.message}</p>
+
+        <button onClick={() => rest()}>
+          resetDatae
+        </button>
 
         <button disabled={isValid || isDirty} style={{ marginBlock: "10px" }}>Submit</button>
         <button onClick={handleGetValues} type="button">getValues</button>
