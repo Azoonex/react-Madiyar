@@ -4,8 +4,12 @@ import { useForm, FieldErrors } from "react-hook-form";
 import { useEffect } from "react";
 
 export default function Login() {
-  const form = useForm<FormValues>();
-  const { control, register, handleSubmit, formState, watch, getValues, setValue, isValid, isDirty } = form;
+  const form = useForm < FormValues > ();
+  const { control, register, handleSubmit, formState, watch, getValues, setValue, isValid, isDirty, isSubmitted, isSubmitting, isSubmitSuccessful, submitCount } = form;
+
+  console.log(isSubmitted, isSubmitting, isSubmitSuccessful, submitCount);
+
+
   const { errors, touchedFields, dirtyFields } = formState;
 
   const onSbmite = (data: FormValues) => {
