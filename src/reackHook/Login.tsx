@@ -3,50 +3,49 @@ import { FormValues } from "./types_form";
 import { useForm, FieldErrors } from "react-hook-form";
 import { useEffect } from "react";
 
-
 export default function Login() {
-  const form = useForm < FormValues > ()
-  const { control, register, handleSubmit, formState, watch, getValues, setValue } = form
-  const { errors,touchedFields,dirtyFields } = formState
+  const form = useForm<FormValues>();
+  const { control, register, handleSubmit, formState, watch, getValues, setValue, isValid, isDirty } = form;
+  const { errors, touchedFields, dirtyFields } = formState;
 
   const onSbmite = (data: FormValues) => {
     console.log('Form submit', data);
   }
 
-  const watchUserName = watch(["username","email"])
+  const watchUserName = watch(["username", "email"]);
 
-  function handleGetValues (){
-    console.log("get values",getValues(["username","channel"]));
+  function handleGetValues() {
+    console.log("get values", getValues(["username", "channel"]));
   }
 
-  function handlesetValue (){
-    setValue("username","",{
-      shouldValidate:true,
-      shouldDrity: true,
-      shouldTouch : true
+  function handlesetValue() {
+    setValue("username", "", {
+      shouldValidate: true,
+      shouldDirty: true,
+      shouldTouch: true
     })
   }
 
-  function onError(errors: FieldErrors<FormValues>){
-    console.log("form erros",errors);
+  function onError(errors: FieldErrors<FormValues>) {
+    console.log("form errors", errors);
   }
 
-  // useEffect(()=>{
-  //   const subscribon = watch((value)=>{
+  // useEffect(() => {
+  //   const subscribon = watch((value) => {
   //     console.log(value);
   //   })
 
-  //   return ()=>{subscribon.unsubscribe()}
+  //   return () => { subscribon.unsubscribe() }
 
-  // },[watch])
+  // }, [watch])
 
   return (
     <div>
       <h1>YouTube Form</h1>
       <h2>watched value : {watchUserName}</h2>
-      <form onSubmit={handleSubmit(onSbmite,onError)}>
+      <form onSubmit={handleSubmit(onSbmite, onError)}>
         <label htmlFor="username">Username</label>
-        <input type="text" id="username"  {...register("username", {
+        <input type="text" id="username" {...register("username", {
           required: 'UserName is required !',
           validate: (value) => {
             return (
@@ -60,18 +59,17 @@ export default function Login() {
         <input type="email" id="email" {...register("email", {
           pattern: {
             value: /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/,
-            message: "Invaid in formate"
+            message: "Invalid format"
           },
-
         })} />
         <p>{errors.email?.message}</p>
 
         <label htmlFor="channel">Channel</label>
         <input type="text" id="channel" {...register("channel", {
-          disable: watch("username") === "",
+          disabled: watch("username") === "",
           required: {
             value: true,
-            message: "This is not valid channel"
+            message: "This is not a valid channel"
           }
         })} />
         <p>{errors.channel?.message}</p>
@@ -81,13 +79,12 @@ export default function Login() {
           valueAsNumber: true,
           required: {
             value: true,
-            message: "This is not valid Age"
+            message: "This is not a valid age"
           }
         })} />
         <p>{errors.age?.message}</p>
 
-
-        <button style={{ marginBlock: "10px" }}>Submit</button>
+        <button disabled={isValid || isDirty} style={{ marginBlock: "10px" }}>Submit</button>
         <button onClick={handleGetValues} type="button">getValues</button>
         <button onClick={handlesetValue} type="button">setValue</button>
         <DevTool control={control} />
@@ -95,6 +92,3 @@ export default function Login() {
     </div>
   )
 }
-
-
-// calling valdtion for validate calling module
