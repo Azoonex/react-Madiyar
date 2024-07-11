@@ -5,6 +5,7 @@ import { useEffect } from "react";
 
 // async valdtion course 26
 // how set mode
+// hook work for zod - not work 28 and 29 for finshing react-form-hook
 
 export default function Login() {
   const form = useForm < FormValues > ();
