@@ -4,6 +4,7 @@ import { useForm, FieldErrors } from "react-hook-form";
 import { useEffect } from "react";
 
 // async valdtion course 26
+// how set mode
 
 export default function Login() {
   const form = useForm < FormValues > ();
