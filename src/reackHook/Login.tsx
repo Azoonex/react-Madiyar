@@ -3,6 +3,8 @@ import { FormValues } from "./types_form";
 import { useForm, FieldErrors } from "react-hook-form";
 import { useEffect } from "react";
 
+// async valdtion course 26
+
 export default function Login() {
   const form = useForm < FormValues > ();
   const { rest,control, register, handleSubmit, formState, watch, getValues, setValue, isValid, isDirty, isSubmitted, isSubmitting, isSubmitSuccessful, submitCount } = form;
